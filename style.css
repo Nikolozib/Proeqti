@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800;900&family=Barlow:wght@300;400;500;600&display=swap');
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 :root {
@@ -25,6 +26,10 @@
   --duration-fast: 0.2s;
   --duration-base: 0.3s;
   --duration-slow: 0.75s;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
