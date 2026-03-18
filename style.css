@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -24,10 +25,6 @@
   --duration-fast: 0.2s;
   --duration-base: 0.3s;
   --duration-slow: 0.75s;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
