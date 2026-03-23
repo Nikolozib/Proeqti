@@ -1,186 +1,164 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Roy Pratt — Certified Fitness Trainer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800;900&family=Barlow:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav>
-      <a href="index.html" class="nav-brand">
-        <div class="nav-brand-name">Roy Pratt</div>
-        <div class="nav-brand-sub">Certified Fitness Trainer</div>
-      </a>
-      <div class="nav-right">
-        <div class="nav-links-box">
-          <a href="index.html">Home</a>
-          <a href="about.html" class="active">About</a>
-          <a href="plans.html">Plans</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <button class="nav-login" onclick="alert('Login coming soon!')">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"
-            />
-          </svg>
-          Log In
-        </button>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Roy Pratt — Certified Fitness Trainer</title>
 
-    <section class="about-hero">
-      <div class="about-hero-bg"></div>
-      <div class="about-hero-content">
-        <h1 class="about-hero-title">THIS IS HOW<br />I MADE IT</h1>
-        <p class="about-hero-sub">
-          This is the space to introduce your business and what it has to offer.
-          Define the qualities and values that make it unique.
-        </p>
-      </div>
-    </section>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
 
-    <section class="about-me-section">
-      <div class="about-me-img sr-left">
-        <img
-          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=700&q=80"
-          alt="Roy training with battle ropes"
-          loading="lazy"
-        />
+  
+  <nav>
+    <a href="index.html" class="nav-brand">
+      <div class="nav-brand-name">Roy Pratt</div>
+      <div class="nav-brand-sub">Certified Fitness Trainer</div>
+    </a>
+    <div class="nav-right">
+      <div class="nav-links-box">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="plans.html">Plans</a>
+        <a href="contact.html">Contact</a>
       </div>
-      <div class="about-me-text sr-right">
-        <h2 class="about-me-title">ABOUT ME</h2>
-        <p class="about-me-para">
-          This is a space to share more about your business. Explain who's
-          behind it, what it does and what this site has to offer. It's an
-          opportunity to tell the story behind the business or describe a
-          special service or product it offers. You can use this section to
-          share your company's history or highlight a particular feature that
-          sets it apart from competitors.
-        </p>
-        <p class="about-me-para">
-          Let the writing speak for itself. Keep a consistent voice throughout
-          the website to stay true to your brand image and give visitors a taste
-          of the company culture and personality.
-        </p>
-      </div>
-    </section>
+      <button class="nav-login" onclick="alert('Login coming soon!')">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+        </svg>
+        Log In
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-    <section class="quote-section sr">
-      <div class="quote-text">
-        "We are what we repeatedly do.<br />
-        Excellence then is not an act<br />
-        but a habit."
-      </div>
-      <div class="quote-author">–Aristotle</div>
-    </section>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="plans.html">Plans</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-    <section class="benefits-section">
-      <div class="benefits-grid">
-        <div class="benefit-item sr sr-d1">
-          <div class="benefit-title">Build Confidence</div>
-          <p class="benefit-desc">
-            This is the space to highlight the benefits you offer and what
-            clients can gain from choosing your services. Focus on the value you
-            deliver and solutions you can offer.
-          </p>
-        </div>
-        <div class="benefit-item sr sr-d2">
-          <div class="benefit-title">Boost Your Mood</div>
-          <p class="benefit-desc">
-            This is the space to highlight the benefits you offer and what
-            clients can gain from choosing your services. Focus on the value you
-            deliver and solutions you can offer.
-          </p>
-        </div>
-        <div class="benefit-item sr sr-d3">
-          <div class="benefit-title">Increase Energy Levels</div>
-          <p class="benefit-desc">
-            This is the space to highlight the benefits you offer and what
-            clients can gain from choosing your services. Focus on the value you
-            deliver and solutions you can offer.
-          </p>
-        </div>
-      </div>
-    </section>
+  
+  <section class="about-hero">
+    <div class="about-hero-bg"></div>
+    <div class="about-hero-content">
+      <h1 class="about-hero-title">THIS IS HOW<br>I MADE IT</h1>
+      <p class="about-hero-sub">
+        This is the space to introduce your business and what it has to offer.
+        Define the qualities and values that make it unique.
+      </p>
+    </div>
+  </section>
 
-    <footer>
-      <div class="footer-brand-name">Roy Pratt</div>
-      <div class="footer-brand-sub">Certified Fitness Trainer</div>
-      <div class="footer-grid">
-        <div>
-          <div class="footer-col-title">Follow Me</div>
-          <ul class="footer-links">
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Youtube</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="footer-col-title">Quick Menu</div>
-          <a class="footer-nav-item" href="index.html">Home</a>
-          <a class="footer-nav-item" href="about.html">About</a>
-          <a class="footer-nav-item" href="plans.html">Plans</a>
-          <a class="footer-nav-item" href="contact.html">Contact</a>
-        </div>
-        <div>
-          <div class="footer-col-title">Legal Pages</div>
-          <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Accessibility Statement</a></li>
-            <li><a href="#">Refund Policy</a></li>
-            <li><a href="#">Terms &amp; Conditions</a></li>
-          </ul>
-        </div>
-        <div class="footer-newsletter">
-          <div class="footer-col-title">Stay Tuned</div>
-          <p>Subscribe Now and Get Access to Exclusive Workouts and Tips</p>
-          <form class="newsletter-form" novalidate>
-            <div class="newsletter-input-wrap">
-              <input
-                type="email"
-                class="newsletter-input"
-                placeholder="Email Address"
-              />
-              <span
-                class="newsletter-error"
-                style="
-                  display: none;
-                  font-size: 0.72rem;
-                  color: #cc0000;
-                  margin-top: 4px;
-                "
-                >Please enter a valid email address</span
-              >
-              <label class="newsletter-checkbox">
-                <input type="checkbox" /> Yes, subscribe me to your newsletter.
-              </label>
-              <button type="submit" class="newsletter-submit">Subscribe</button>
-              <span
-                class="newsletter-success"
-                style="
-                  display: none;
-                  font-size: 0.78rem;
-                  color: #7bc67e;
-                  margin-top: 6px;
-                "
-                >&#10003; You&apos;re subscribed!</span
-              >
-            </div>
-          </form>
-        </div>
+  
+  <section class="about-me-section">
+    <div class="about-me-img sr-left">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=700&q=80"
+           alt="Roy training with battle ropes" loading="lazy"/>
+    </div>
+    <div class="about-me-text sr-right">
+      <h2 class="about-me-title">ABOUT ME</h2>
+      <p class="about-me-para">
+        This is a space to share more about your business. Explain who's behind it, what it
+        does and what this site has to offer. It's an opportunity to tell the story behind the
+        business or describe a special service or product it offers. You can use this section
+        to share your company's history or highlight a particular feature that sets it apart
+        from competitors.
+      </p>
+      <p class="about-me-para">
+        Let the writing speak for itself. Keep a consistent voice throughout the website to
+        stay true to your brand image and give visitors a taste of the company culture
+        and personality.
+      </p>
+    </div>
+  </section>
+
+  
+  <section class="quote-section sr">
+    <div class="quote-text">
+      "We are what we repeatedly do.<br>
+       Excellence then is not an act<br>
+       but a habit."
+    </div>
+    <div class="quote-author">–Aristotle</div>
+  </section>
+
+  
+  <section class="benefits-section">
+    <div class="benefits-grid">
+      <div class="benefit-item sr sr-d1">
+        <span class="benefit-icon"></span>
+        <div class="benefit-title">Build Confidence</div>
+        <p class="benefit-desc">This is the space to highlight the benefits you offer and what clients can gain from choosing your services. Focus on the value you deliver and solutions you can offer.</p>
       </div>
-      <div class="footer-bottom">
-        &copy; 2035 by Roy Pratt. Powered and secured by <a href="#">Wix</a>
+      <div class="benefit-item sr sr-d2">
+        <span class="benefit-icon"></span>
+        <div class="benefit-title">Boost Your Mood</div>
+        <p class="benefit-desc">This is the space to highlight the benefits you offer and what clients can gain from choosing your services. Focus on the value you deliver and solutions you can offer.</p>
       </div>
-    </footer>
-    <script src="app.js"></script>
-  </body>
+      <div class="benefit-item sr sr-d3">
+        <span class="benefit-icon"></span>
+        <div class="benefit-title">Increase Energy Levels</div>
+        <p class="benefit-desc">This is the space to highlight the benefits you offer and what clients can gain from choosing your services. Focus on the value you deliver and solutions you can offer.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="footer-brand-name">Roy Pratt</div>
+    <div class="footer-brand-sub">Certified Fitness Trainer</div>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-col-title">Follow Me</div>
+        <ul class="footer-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Youtube</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Menu</div>
+        <a class="footer-nav-item" href="index.html">Home</a>
+        <a class="footer-nav-item" href="about.html">About</a>
+        <a class="footer-nav-item" href="plans.html">Plans</a>
+        <a class="footer-nav-item" href="contact.html">Contact</a>
+      </div>
+      <div>
+        <div class="footer-col-title">Legal Pages</div>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Accessibility Statement</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <div class="footer-col-title">Stay Tuned</div>
+        <p>Subscribe Now and Get Access to Exclusive Workouts and Tips</p>
+        <form class="newsletter-form" novalidate>
+          <div class="newsletter-input-wrap">
+            <input type="email" class="newsletter-input" placeholder="Email Address"/>
+            <span class="newsletter-error" style="display:none;font-size:.72rem;color:#cc0000;margin-top:4px;">Please enter a valid email address</span>
+            <label class="newsletter-checkbox">
+              <input type="checkbox"/> Yes, subscribe me to your newsletter.
+            </label>
+            <button type="submit" class="newsletter-submit">Subscribe</button>
+            <span class="newsletter-success" style="display:none;font-size:.78rem;color:#7bc67e;margin-top:6px;">&#10003; You&apos;re subscribed!</span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2035 by Roy Pratt. Powered and secured by <a href="#">Wix</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
 </html>
