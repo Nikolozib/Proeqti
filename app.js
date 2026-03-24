@@ -43,12 +43,12 @@ function blockNumbers(inputId) {
   const input = document.getElementById(inputId);
   if (!input) return;
 
-  
+
   input.addEventListener('keydown', (e) => {
     if (NUMBER_RX.test(e.key)) e.preventDefault();
   });
 
-  
+
   input.addEventListener('input', () => {
     const clean = input.value.replace(/[0-9]/g, '');
     if (clean !== input.value) {
@@ -67,7 +67,7 @@ const EMAIL_RX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 function validateField(inputId, groupId, check) {
   const input = document.getElementById(inputId);
   const group = document.getElementById(groupId);
-  if (!input || !group) return true;   
+  if (!input || !group) return true;
 
   const valid = check(input.value.trim());
   group.classList.toggle('error', !valid);
@@ -106,7 +106,7 @@ if (form) {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    
+
     FIELDS.every(({ inputId, groupId, check }) =>
       validateField(inputId, groupId, check)
     );
@@ -115,15 +115,15 @@ if (form) {
 
 (function initNewsletterForms() {
   document.querySelectorAll('.newsletter-form').forEach((nForm) => {
-    const input     = nForm.querySelector('.newsletter-input');
-    const errorEl   = nForm.querySelector('.newsletter-error');
+    const input = nForm.querySelector('.newsletter-input');
+    const errorEl = nForm.querySelector('.newsletter-error');
     const successEl = nForm.querySelector('.newsletter-success');
     if (!input) return;
 
-    
+
     input.addEventListener('input', () => {
       if (errorEl && EMAIL_RX.test(input.value.trim())) {
-        errorEl.style.display        = 'none';
+        errorEl.style.display = 'none';
         input.style.borderBottomColor = '';
       }
     });
@@ -132,28 +132,28 @@ if (form) {
       e.preventDefault();
       const val = input.value.trim();
 
-      if (errorEl)   errorEl.style.display   = 'none';
+      if (errorEl) errorEl.style.display = 'none';
       if (successEl) successEl.style.display = 'none';
 
       if (!EMAIL_RX.test(val)) {
         if (errorEl) {
-          errorEl.style.display        = 'block';
+          errorEl.style.display = 'block';
           input.style.borderBottomColor = '#cc0000';
           input.focus();
         }
         return;
       }
 
-      
+
       input.style.borderBottomColor = '';
-      input.value    = '';
+      input.value = '';
       input.disabled = true;
 
       if (successEl) {
         successEl.style.display = 'block';
         setTimeout(() => {
           successEl.style.display = 'none';
-          input.disabled          = false;
+          input.disabled = false;
         }, 4000);
       }
     });
